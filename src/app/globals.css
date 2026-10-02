@@ -1,41 +1,79 @@
 @import "tailwindcss";
 
 :root {
-  --surface-container-low: #f2f4f2;
-  --surface-container: #ececec;
-  --surface-container-high: #e6e9e7;
+  /* Backgrounds */
+  --background: #f3efe7;
+  --surface: #ffffff;
+  --surface-container: #e8e1d5;
+  --surface-container-lowest: #fffdf9;
+  --surface-dim: #dfd9d2;
+  --input-background: #efece6;
 
-  --primary-container: #0b6f6d;
-  --primary: #005553;
-  --primary-fixed: #9feeee;
+  /* Brand */
+  --primary: #0d7775;
+  --primary-token: #176f6b;
+  --primary-hover: #085453;
+  --primary-foreground: #ffffff;
 
-  --on-surface-ink: #191c1b;
-  --secondary: #58605e;
-  --outline: #6e7978;
+  /* Text */
+  --foreground: #1d1b19;
+  --text-secondary: #4a453e;
+  --text-muted: #706a60;
+  --text-placeholder: #999388;
 
-  --status-positive: #0b7b78;
-  --status-negative: #c21f24;
-  --status-warning: #d9e1df;
-}
+  /* Borders */
+  --border: #e5e0d8;
+  --input-border: #dcd5cb;
 
-::selection {
-  background-color: #e6dfd2;
+  /* Status */
+  --success: #3b8266;
+  --warning: #d97706;
+  --destructive: #e26a54;
+
+  /* Focus */
+  --focus-ring: rgba(13, 119, 117, 0.2);
+
+  /* Subtle Highlights */
+  --primary-subtle: rgba(13, 119, 117, 0.08);
+
+  /* Shadows */
+  --shadow-soft: rgba(29, 27, 25, 0.04);
+  --shadow-card: rgba(29, 27, 25, 0.08);
+
+  /* Development Only */
+  --dev-widget-background: #2c2926;
 }
 
 @theme inline {
-  --color-surface-container-low: var(--surface-container-low);
+  /* Backgrounds */
+  --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-surface-container: var(--surface-container);
-  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-dim: var(--surface-dim);
+  --color-input-background: var(--input-background);
 
-  --color-primary-container: var(--primary-container);
+  /* Brand */
   --color-primary: var(--primary);
-  --color-primary-fixed: var(--primary-fixed);
+  --color-primary-token: var(--primary-token);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
 
-  --color-on-surface-ink: var(--on-surface-ink);
-  --color-secondary: var(--secondary);
-  --color-outline: var(--outline);
+  /* Text */
+  --color-foreground: var(--foreground);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-placeholder: var(--text-placeholder);
 
-  --color-status-positive: var(--status-positive);
-  --color-status-negative: var(--status-negative);
-  --color-status-warning: var(--status-warning);
+  /* Borders */
+  --color-border: var(--border);
+  --color-input-border: var(--input-border);
+
+  /* Status */
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-destructive: var(--destructive);
+
+  /* Development */
+  --color-dev-widget: var(--dev-widget-background);
 }
