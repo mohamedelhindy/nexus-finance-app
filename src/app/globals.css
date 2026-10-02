@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+:root {
+  --surface-container-low: #f2f4f2;
+  --surface-container: #ececec;
+  --surface-container-high: #e6e9e7;
+
+  --primary-container: #0b6f6d;
+  --primary: #005553;
+  --primary-fixed: #9feeee;
+
+  --on-surface-ink: #191c1b;
+  --secondary: #58605e;
+  --outline: #6e7978;
+
+  --status-positive: #0b7b78;
+  --status-negative: #c21f24;
+  --status-warning: #d9e1df;
+}
+
+::selection {
+  background-color: #e6dfd2;
+}
+
+@theme inline {
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+
+  --color-primary-container: var(--primary-container);
+  --color-primary: var(--primary);
+  --color-primary-fixed: var(--primary-fixed);
+
+  --color-on-surface-ink: var(--on-surface-ink);
+  --color-secondary: var(--secondary);
+  --color-outline: var(--outline);
+
+  --color-status-positive: var(--status-positive);
+  --color-status-negative: var(--status-negative);
+  --color-status-warning: var(--status-warning);
+}

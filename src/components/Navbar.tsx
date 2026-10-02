@@ -3,84 +3,92 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="h-[66px] border-b border-[#e5e0d7] bg-[#f6f3ed]">
+    <header className="h-[66px] border-b border-[#e5e0d7] bg-surface-container-low">
       <nav
         aria-label="Main navigation"
         className="mx-auto flex h-full max-w-[1368px] items-center justify-between px-6 lg:px-0"
       >
+        {/* logo */}
         <Link
           href="/"
           aria-label="Nexus home"
           className="flex items-center gap-1.5"
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-[5px] bg-[#147b76] text-[21px] font-bold text-white">
+          <span className="flex h-8 w-8 items-center justify-center rounded-[5px] bg-primary-container text-[21px] font-bold text-white">
             N
           </span>
-          <span className="font-serif text-[20px] font-bold tracking-[-0.04em] text-[#242321]">
+          <span className="font-serif text-[20px] font-bold tracking-[-0.04em] text-on-surface-ink">
             NEXUS
           </span>
         </Link>
 
+        {/* navigation */}
         <div className="hidden items-center gap-8 text-[14px] lg:flex">
-          <Link href="/" className="font-medium text-[#1f1f1d]">
+          <Link href="/" className="font-medium text-on-surface-ink">
             Explore
           </Link>
 
           <Link
             href="#companies"
-            className="text-[#77736d] transition-colors hover:text-[#1f1f1d]"
+            className="text-secondary transition-colors hover:text-on-surface-ink"
           >
             Companies
           </Link>
 
           <Link
             href="#news"
-            className="text-[#77736d] transition-colors hover:text-[#1f1f1d]"
+            className="text-secondary transition-colors hover:text-on-surface-ink"
           >
             News
           </Link>
 
           <Link
             href="#ai-research"
-            className="text-[#77736d] transition-colors hover:text-[#1f1f1d]"
+            className="text-secondary transition-colors hover:text-on-surface-ink"
           >
             AI Research
           </Link>
         </div>
 
+        {/* user actions */}
         <div className="flex items-center gap-5">
-          <button
-            type="button"
-            aria-label="Toggle theme"
-            className="text-[#5e5b55] transition-colors hover:text-[#147b76] cursor-pointer"
-          >
-            <Image src="/assets/sun.svg" alt="" width={20} height={20} />
-          </button>
+          {/* theme toggle */}
+          <div className="group flex h-8 w-8 cursor-pointer items-center justify-center rounded-[6px] transition-colors duration-200 hover:bg-[#e8e3d7]">
+            <button
+              type="button"
+              aria-label="Toggle theme"
+              className="cursor-pointer text-secondary"
+            >
+              <Image
+                src="/assets/sun.svg"
+                alt="light mode"
+                width={20}
+                height={20}
+              />
+            </button>
+          </div>
+
+          {/* sign in */}
           <Link
             href="#sign-in"
-            className="hidden text-[14px] text-[#77736d] sm:block"
+            className="hidden text-[14px] text-secondary sm:block hover:text-on-surface-ink transition-colors duration-200"
           >
             Sign In
           </Link>
           <Link
             href="#get-started"
-            className="rounded-[6px] bg-[#147b76] px-4 py-2 text-[14px] font-medium text-white transition-colors hover:bg-[#0f625e]"
+            className="rounded-[6px] bg-primary-container px-4 py-2 text-[14px] font-medium text-white transition-colors duration-200 hover:bg-primary"
           >
             Get Started
           </Link>
+
+          {/* user account */}
           <Link
             href="#account"
             aria-label="Your account"
-            className="flex h-8 w-8 items-center justify-center rounded-full bg-[#147b76] text-white transition-colors hover:bg-[#0f625e]"
+            className="flex h-8 w-8 items-center justify-center rounded-xl bg-primary-container text-white transition-colors hover:bg-primary"
           >
-            <svg
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              className="h-[18px] w-[18px] fill-none stroke-current stroke-[1.7]"
-            >
-              <circle cx="12" cy="8" r="3" />
-              <path d="M5.5 19c.7-3 2.8-4.5 6.5-4.5s5.8 1.5 6.5 4.5" />
-            </svg>
+            <Image src="/assets/profile.svg" alt="" width={32} height={32} />
           </Link>
         </div>
       </nav>
