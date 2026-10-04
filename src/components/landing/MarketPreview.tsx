@@ -1,45 +1,45 @@
+import Button from "@/components/shared/Button";
+
 const MarketPreview = () => {
   return (
-    <section className="mx-auto flex max-w-[1280px] flex-col items-center gap-12 px-6 py-16 lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:px-0 lg:py-20">
-      <div className="w-full max-w-[560px]">
+    <section className="mx-auto flex min-h-[calc(100vh-66px)] max-w-[1280px] items-center justify-center overflow-hidden px-6 py-8 lg:flex-row lg:justify-between lg:gap-12 lg:px-6 lg:py-0 xl:px-0">
+      <div className="w-full max-w-[540px]">
         {/* header */}
-        <div className="mb-6 inline-flex items-center gap-2 rounded-md border border-[#d8d1c6] bg-[#f4f1ea]/80 px-2.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.2em] text-[#2c2a28] shadow-sm">
+        <div className="mb-5 inline-flex items-center gap-2 rounded-md bg-surface-container px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.16em] text-text-secondary shadow-sm">
           <span className="h-2.5 w-2.5 rounded-full bg-[#0c726d]" />
           AI FINANCIAL INTELLIGENCE
         </div>
 
         {/* Market preview insight */}
-        <h1 className="max-w-[540px] font-serif text-[clamp(3.3rem,5vw,6.4rem)] leading-[0.9] tracking-[-0.06em] text-[#161512]">
+        <h1 className="max-w-[520px] font-serif text-[clamp(3rem,4.3vw,5.1rem)] leading-[0.91] tracking-[-0.06em] text-[#161512]">
           See the bigger picture in
           <span className="block italic">global markets.</span>
         </h1>
 
-        <p className="mt-7 max-w-[520px] text-[17px] leading-[1.55] text-[#4b453e]">
+        <p className="mt-6 max-w-[500px] text-[15px] leading-[1.5] text-[#4b453e]">
           NEXUS connects company fundamentals, market movements, financial news,
           macroeconomic signals, and AI analysis into one financial intelligence
           platform.
         </p>
 
         {/* Buttons */}
-        <div className="mt-8 flex flex-wrap items-center gap-4">
-          <button
-            type="button"
-            className="rounded-xl bg-[#0d7d75] px-6 py-3 text-[15px] font-medium text-white shadow-[0_8px_16px_rgba(13,125,117,0.2)] transition-colors hover:bg-[#0b6b66]"
-          >
-            Explore Intelligence
-          </button>
-          <button
-            type="button"
-            className="rounded-xl border border-[#d4cfc5] bg-transparent px-6 py-3 text-[15px] font-medium text-[#1f1d1a] transition-colors hover:bg-[#efeae1]"
-          >
-            Learn How It Works
-          </button>
+        <div className="mt-7 flex flex-wrap items-center gap-3">
+          <Button
+            text="Explore Intelligence"
+            color="bg-[#0d7d75] text-white shadow-[0_8px_16px_rgba(13,125,117,0.2)] hover:bg-[#0b6b66]"
+            className="px-5 py-2.5 text-[14px]"
+          />
+          <Button
+            text="Learn How It Works"
+            color="border border-[#d4cfc5] bg-transparent text-[#1f1d1a] hover:bg-[#efeae1]"
+            className="px-5 py-2.5 text-[14px]"
+          />
         </div>
 
         {/*  */}
-        <div className="mt-14 grid max-w-[520px] grid-cols-3 gap-8 border-t border-[#d8d1c6] pt-7 text-left">
+        <div className="mt-10 grid max-w-[520px] grid-cols-3 gap-7 border-t border-[#d8d1c6] pt-5 text-left">
           <div>
-            <div className="font-serif text-[18px] font-semibold text-[#11100f] sm:text-[22px]">
+            <div className="font-serif text-[18px] font-semibold text-[#11100f] sm:text-[20px]">
               42,000+
             </div>
             <div className="mt-1 text-[13px] text-[#5a544e]">
@@ -48,7 +48,7 @@ const MarketPreview = () => {
           </div>
 
           <div>
-            <div className="font-serif text-[18px] font-semibold text-[#11100f] sm:text-[22px]">
+            <div className="font-serif text-[18px] font-semibold text-[#11100f] sm:text-[20px]">
               180+
             </div>
             <div className="mt-1 text-[13px] text-[#5a544e]">
@@ -57,7 +57,7 @@ const MarketPreview = () => {
           </div>
 
           <div>
-            <div className="font-serif text-[18px] font-semibold text-[#11100f] sm:text-[22px]">
+            <div className="font-serif text-[18px] font-semibold text-[#11100f] sm:text-[20px]">
               100%
             </div>
             <div className="mt-1 text-[13px] text-[#5a544e]">
@@ -68,21 +68,21 @@ const MarketPreview = () => {
       </div>
 
       {/* macro conviction signal */}
-      <div className="w-full max-w-[580px]">
-        <div className="rounded-[18px] border border-[#d7d0c5] bg-[#f7f4ee] p-4 shadow-[0_12px_24px_rgba(30,25,20,0.05)]">
-          <div className="mb-4 flex items-center justify-between gap-3">
+      <div className="w-full max-w-[600px]">
+        <div className="rounded-[12px] border border-[#d7d0c5] bg-[#f7f4ee] p-3.5 shadow-[0_12px_24px_rgba(30,25,20,0.05)]">
+          <div className="mb-3 flex items-center justify-between gap-3">
             <div className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.18em] text-[#3a352f]">
               <span className="h-2.5 w-2.5 rounded-full bg-[#0d7c73]" />
               MACRO CONVICTION SIGNAL
             </div>
             <div className="text-[11px] uppercase tracking-[0.18em] text-[#7c7368]">
-              LIVE // 14:32:00 UTC
+              LIVE // 14:32:08 UTC
             </div>
           </div>
 
-          <div className="mb-3 flex items-start justify-between gap-3">
+          <div className="mb-2 flex items-start justify-between gap-3">
             <div>
-              <div className="font-medium text-[13px] text-[#201d1b]">
+              <div className="font-medium text-[18px] text-[#201d1b]">
                 Global Liquidity Dynamics
               </div>
               <div className="mt-1 text-[12px] text-[#6b645d]">
@@ -92,7 +92,7 @@ const MarketPreview = () => {
             </div>
 
             <div className="pt-1 text-right">
-              <div className="font-serif text-[22px] leading-none text-[#1a1816]">
+              <div className="font-serif text-[27px] leading-none text-[#1a1816]">
                 142.84
               </div>
               <div className="mt-1 text-[12px] font-medium text-[#1d8b78]">
@@ -101,7 +101,7 @@ const MarketPreview = () => {
             </div>
           </div>
 
-          <div className="rounded-[10px] border border-[#d8d0c4] bg-[#e8e2d8] p-3 pb-2">
+          <div className="rounded-[8px] border border-[#d8d0c4] bg-[#e8e2d8] p-2.5 pb-1">
             <div className="mb-2 flex items-center justify-between text-[11px] text-[#6d665f]">
               <span>Sovereign Net Absorption</span>
               <span>120-Day Range</span>
@@ -109,7 +109,7 @@ const MarketPreview = () => {
 
             <svg
               viewBox="0 0 520 170"
-              className="h-[150px] w-full"
+              className="h-[132px] w-full"
               aria-label="Macroeconomic trend chart"
               role="img"
             >
@@ -173,15 +173,15 @@ const MarketPreview = () => {
             </svg>
           </div>
 
-          <div className="mt-4 grid grid-cols-2 gap-3">
-            <div className="rounded-xl border border-[#d8d1c6] bg-[#f2efe8] p-3 text-[#1b1916]">
+          <div className="mt-3 grid grid-cols-2 gap-2.5">
+            <div className="rounded-lg border border-[#d8d1c6] bg-[#f2efe8] p-2.5 text-[#1b1916]">
               <div className="mb-2 flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#514d49]">
                 <span className="inline-flex h-4 w-4 items-center justify-center rounded-sm bg-[#e4eee9] text-[10px] text-[#0d7d75]">
                   🏛
                 </span>
                 CENTRAL BANK RESERVES
               </div>
-              <div className="font-serif text-[18px] text-[#1a1816]">
+              <div className="font-serif text-[16px] text-[#1a1816]">
                 G4 Balance Sheet
               </div>
               <div className="mt-1 text-[12px] text-[#5f5a52]">
@@ -189,14 +189,14 @@ const MarketPreview = () => {
               </div>
             </div>
 
-            <div className="rounded-xl border border-[#d8d1c6] bg-[#f2efe8] p-3 text-[#1b1916]">
+            <div className="rounded-lg border border-[#d8d1c6] bg-[#f2efe8] p-2.5 text-[#1b1916]">
               <div className="mb-2 flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#514d49]">
                 <span className="inline-flex h-4 w-4 items-center justify-center rounded-sm bg-[#e4eee9] text-[10px] text-[#0d7d75]">
                   ⤴
                 </span>
                 SECTOR FLOW IMPACT
               </div>
-              <div className="font-serif text-[18px] text-[#1a1816]">
+              <div className="font-serif text-[16px] text-[#1a1816]">
                 High-Duration Technology
               </div>
               <div className="mt-1 text-[12px] text-[#5f5a52]">
@@ -205,7 +205,7 @@ const MarketPreview = () => {
             </div>
           </div>
 
-          <div className="mt-4 flex items-center justify-between gap-3 border-t border-[#d8d1c6] pt-3 text-[12px] text-[#544e47]">
+          <div className="mt-3 flex items-center justify-between gap-3 border-t border-[#d8d1c6] pt-2.5 text-[12px] text-[#544e47]">
             <div className="flex items-center gap-2">
               <span className="flex h-4 w-4 items-center justify-center rounded-full bg-[#dfeee8] text-[10px] text-[#0d7d75]">
                 ✓
@@ -213,12 +213,11 @@ const MarketPreview = () => {
               Validated against 14 central bank balance sheets
             </div>
 
-            <button
-              type="button"
-              className="text-[#4f4a45] hover:text-[#1c1a17]"
-            >
-              Inspect Citations →
-            </button>
+            <Button
+              text="Inspect Citations →"
+              color="bg-transparent text-[#0d7775] hover:text-[#1c1a17]"
+              className="px-0 py-0 text-[12px]"
+            />
           </div>
         </div>
       </div>
