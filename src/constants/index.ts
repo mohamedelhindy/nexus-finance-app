@@ -122,4 +122,32 @@ export const explainabilityDimensions = [
   },
 ];
 
+export const closingCta = {
+  title: "See the bigger picture.",
+  description:
+    "Explore financial intelligence built for a changing global market. Institutional synthesis, transparent evidence, and zero synthetic hype.",
+  note: "No credit card required • Direct access to macro telemetry feeds • Full citation audit trail",
+};
+
+export const footerContent = {
+  description:
+    "Institutional-grade computational intelligence synthesized for analysts, portfolio managers, and executive leadership.",
+  navigation: [
+    {
+      title: "Product",
+      links: ["Explore", "Companies", "News", "AI Research"],
+    },
+    {
+      title: "Company",
+      links: ["About", "Contact"],
+    },
+    {
+      title: "Legal",
+      links: ["Privacy", "Terms", "Regulatory Compliance"],
+    },
+  ],
+  copyright: "© 2025 NEXUS Intelligence Systems Inc. All rights reserved.",
+  signature: "Designed for rigorous financial analysis.",
+};
+
 export default synthesisThreads;

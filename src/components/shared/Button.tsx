@@ -14,7 +14,7 @@ const Button = ({
   return (
     <button
       type={type}
-      className={`rounded-md px-6 py-3 text-[15px] font-medium ${color} transition-colors ${className}`}
+      className={`rounded-md px-6 py-3 text-[15px] font-medium ${color} transition-colors duration-200 cursor-pointer ${className}`}
     >
       {text}
     </button>
