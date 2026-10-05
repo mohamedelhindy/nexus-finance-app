@@ -77,3 +77,8 @@
   /* Development */
   --color-dev-widget: var(--dev-widget-background);
 }
+
+::selection {
+  background-color: var(--surface-container);
+  color: var(--foreground);
+}

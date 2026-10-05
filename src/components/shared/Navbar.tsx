@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="h-[66px] border-b border-border bg-background">
+    <header className="sticky top-5 z-50 h-[66px] border-b border-border bg-background">
       <nav
         aria-label="Main navigation"
         className="mx-auto flex h-full max-w-[1368px] items-center justify-between px-6 lg:px-0"
