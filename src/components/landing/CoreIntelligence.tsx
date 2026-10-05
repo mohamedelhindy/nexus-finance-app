@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CoreIntelligence = () => {
   return (
-    <section className="flex min-h-[700px] w-full flex-col justify-center gap-12 overflow-hidden bg-surface-container px-[15vw] py-16 lg:gap-14">
+    <section className="flex min-h-[850px] w-full flex-col justify-center gap-12 overflow-hidden bg-surface-container px-[15vw] py-24 lg:gap-14 lg:py-24">
       <div className="flex w-full flex-col">
         <p className="text-[12px] font-medium uppercase tracking-[0.08em] text-primary">
           Institutional Synthesis

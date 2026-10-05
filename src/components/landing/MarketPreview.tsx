@@ -2,7 +2,7 @@ import Button from "@/components/shared/Button";
 
 const MarketPreview = () => {
   return (
-    <section className="mx-auto min-w-[600px] flex min-h-[700px] w-full flex-col items-center justify-center gap-10 overflow-hidden lg:w-[70%] lg:flex-row lg:items-center lg:gap-[3.5vw] lg:px-0 lg:py-0">
+    <section className="mx-auto min-w-[600px] flex min-h-[850px] w-full flex-col items-center justify-center gap-10 overflow-hidden py-24 lg:w-[70%] lg:flex-row lg:items-center lg:gap-[3.5vw] lg:px-0 lg:py-24">
       <div className="flex min-w-0 flex-1 flex-col justify-center">
         {/* header */}
         <div className="mb-5 inline-flex w-fit items-center gap-2 rounded-md bg-surface-container px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.16em] text-text-secondary shadow-sm">
