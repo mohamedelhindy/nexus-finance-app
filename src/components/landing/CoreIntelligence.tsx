@@ -8,11 +8,11 @@ const CoreIntelligence = () => {
           Institutional Synthesis
         </p>
 
-        <h1 className="mt-3 max-w-[42rem] font-serif text-[clamp(2.5rem,3.5vw,3.7rem)] leading-[1.05] tracking-[-0.05em] text-[#161512]">
+        <h1 className="mt-3 max-w-[42rem] font-serif text-[clamp(2.5rem,3.5vw,3.7rem)] leading-[1.05] tracking-[-0.05em] text-foreground">
           Financial intelligence without the noise.
         </h1>
 
-        <p className="mt-5 max-w-[40rem] text-[15px] leading-[1.55] text-[#4b453e]">
+        <p className="mt-5 max-w-[40rem] text-[15px] leading-[1.55] text-text-secondary">
           Markets produce overwhelming volumes of filings, pricing fluctuations,
           and macroeconomic noise. NEXUS continuously synthesizes disparate data
           sources into clear, explainable signals.
@@ -64,19 +64,19 @@ const ExplanationCard = ({
   footerLabel,
 }: ExplanationCardProp) => {
   return (
-    <div className="bg-surface flex min-h-[310px] min-w-[min(100%,280px)] flex-1 flex-col gap-5 rounded-md border border-[#e5e0d8] p-[clamp(1.25rem,1.7vw,2rem)] shadow-[0_2px_5px_rgba(29,27,25,0.04)]">
+    <div className="bg-surface flex min-h-[310px] min-w-[min(100%,280px)] flex-1 flex-col gap-5 rounded-md border border-border p-[clamp(1.25rem,1.7vw,2rem)] shadow-[0_2px_5px_var(--shadow-card)]">
       <div className="flex h-11 w-11 items-center justify-center rounded-md bg-surface-container">
         <Image src={imgSrc} alt={imgAlt} width={48} height={48} />
       </div>
 
-      <h2 className="text-[18px] font-medium tracking-[-0.02em] text-[#161512]">
+      <h2 className="text-[18px] font-medium tracking-[-0.02em] text-foreground">
         {header}
       </h2>
-      <p className="text-[14px] leading-[1.55] text-[#6b665f]">{paragraph}</p>
+      <p className="text-[14px] leading-[1.55] text-text-muted">{paragraph}</p>
 
-      <div className="mt-auto h-px w-full bg-[#d8d1c6]" />
+      <div className="mt-auto h-px w-full bg-border" />
 
-      <div className="flex items-center justify-between text-[12px] text-[#6b665f]">
+      <div className="flex items-center justify-between text-[12px] text-text-muted">
         <p>{footerLabel}</p>
         <span className="text-primary">→</span>
       </div>

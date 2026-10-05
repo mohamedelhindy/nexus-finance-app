@@ -2,17 +2,17 @@ import synthesisThreads from "@/constants/index";
 
 const MarketSynthesis = () => {
   return (
-    <section className="flex min-h-[850px] w-full flex-col items-center justify-center gap-12 overflow-hidden bg-[#f6f3ed] px-[15vw] py-24 lg:flex-row lg:items-center lg:gap-[3vw] lg:py-16">
+    <section className="flex min-h-[850px] w-full flex-col items-center justify-center gap-12 overflow-hidden bg-background px-[15vw] py-24 lg:flex-row lg:items-center lg:gap-[3vw] lg:py-16">
       <div className="flex min-w-0 flex-1 flex-col">
         <p className="text-[12px] font-medium uppercase tracking-[0.08em] text-primary">
           Cross-Asset Synthesis
         </p>
 
-        <h1 className="mt-4 font-serif text-[clamp(2.5rem,3.5vw,3.7rem)] leading-[1.08] tracking-[-0.05em] text-[#161512]">
+        <h1 className="mt-4 font-serif text-[clamp(2.5rem,3.5vw,3.7rem)] leading-[1.08] tracking-[-0.05em] text-foreground">
           Understand what is moving the market.
         </h1>
 
-        <p className="mt-6 text-[15px] leading-[1.55] text-[#6b665f]">
+        <p className="mt-6 text-[15px] leading-[1.55] text-text-muted">
           Isolated metrics fail during regime changes. NEXUS maps causal
           dependencies across disparate domains, showing precisely why asset
           valuations shift and which variables will decide the next pivot.
@@ -23,11 +23,11 @@ const MarketSynthesis = () => {
             {synthesisThreads.map(({ label, text }) => (
               <li
                 key={label}
-                className="flex gap-3 border-b border-[#d8d1c6] py-4 text-[14px] leading-[1.45] text-[#6b665f] last:border-b-0"
+                className="flex gap-3 border-b border-border py-4 text-[14px] leading-[1.45] text-text-muted last:border-b-0"
               >
                 <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" />
                 <p>
-                  <strong className="mr-2 font-medium text-[#1d1b19]">
+                  <strong className="mr-2 font-medium text-foreground">
                     {label}:
                   </strong>
                   {text}
@@ -39,10 +39,10 @@ const MarketSynthesis = () => {
       </div>
 
       <div className="flex min-w-0 flex-1">
-        <div className="w-full rounded-[8px] border border-[#d7d0c5] bg-[#fffdf9] p-[clamp(1.25rem,1.7vw,2rem)] shadow-[0_8px_18px_rgba(30,25,20,0.04)]">
-          <div className="flex items-center justify-between gap-3 border-b border-[#d8d1c6] pb-4 text-[11px]">
-            <div className="flex items-center gap-2 text-[#6b665f]">
-              <span className="rounded-[3px] bg-surface-container px-2 py-1.5 font-medium text-[#514d49]">
+        <div className="w-full rounded-[8px] border border-border bg-surface-container-lowest p-[clamp(1.25rem,1.7vw,2rem)] shadow-[0_8px_18px_var(--shadow-card)]">
+          <div className="flex items-center justify-between gap-3 border-b border-border pb-4 text-[11px]">
+            <div className="flex items-center gap-2 text-text-muted">
+              <span className="rounded-[3px] bg-surface-container px-2 py-1.5 font-medium text-text-secondary">
                 CASE STUDY // 084
               </span>
               <span>Global Semiconductor Nexus</span>
@@ -52,11 +52,11 @@ const MarketSynthesis = () => {
 
           <div className="mt-5 rounded-[6px] bg-surface-container p-5">
             <div className="flex items-center justify-between gap-3">
-              <h2 className="flex items-center gap-2 text-[17px] font-medium text-[#161512]">
+              <h2 className="flex items-center gap-2 text-[17px] font-medium text-foreground">
                 <span className="text-[22px] leading-none text-primary">✣</span>
                 Subsidies &amp; Lithography Interlock
               </h2>
-              <span className="rounded-[3px] bg-[#fffdf9] px-2 py-1 font-mono text-[10px] text-[#514d49]">
+              <span className="rounded-[3px] bg-surface-container-lowest px-2 py-1 font-mono text-[10px] text-text-secondary">
                 ASML · TSM · INTC
               </span>
             </div>
@@ -68,7 +68,7 @@ const MarketSynthesis = () => {
               metric="FLOW: +18.4%"
             />
 
-            <div className="py-2 text-center text-xl text-[#8a8379]">↓</div>
+            <div className="py-2 text-center text-xl text-text-placeholder">↓</div>
 
             <SynthesisNode
               eyebrow="CAPITAL EQUIPMENT CHOKEPOINT"
@@ -77,7 +77,7 @@ const MarketSynthesis = () => {
               metric="PRICING: +9.2%"
             />
 
-            <div className="py-2 text-center text-xl text-[#8a8379]">↓</div>
+            <div className="py-2 text-center text-xl text-text-placeholder">↓</div>
 
             <SynthesisNode
               eyebrow="FOUNDRY MARGIN TRANSLATION"
@@ -92,7 +92,7 @@ const MarketSynthesis = () => {
               <span>⌁</span>
               Synthesized Nexus Takeaway
             </div>
-            <p className="mt-2 text-[13px] leading-[1.55] text-[#6b665f]">
+            <p className="mt-2 text-[13px] leading-[1.55] text-text-muted">
               Foundry margin compressibility is completely offset by sovereign
               subsidy offsets through Q4 2025. Equipment backlog ensures
               defensive cash flow even during consumer silicon demand softening.
@@ -118,13 +118,13 @@ const SynthesisNode = ({
   metric,
 }: SynthesisNodeProps) => {
   return (
-    <div className="mt-3 grid grid-cols-[1fr_auto] gap-3 rounded-[4px] border border-[#e1dbd1] bg-[#fffdf9] px-3 py-4">
+    <div className="mt-3 grid grid-cols-[1fr_auto] gap-3 rounded-[4px] border border-border bg-surface-container-lowest px-3 py-4">
       <div>
-        <p className="text-[10px] uppercase tracking-[0.06em] text-[#7b746b]">
+        <p className="text-[10px] uppercase tracking-[0.06em] text-text-placeholder">
           {eyebrow}
         </p>
-        <h3 className="mt-1 text-[14px] font-medium text-[#1d1b19]">{title}</h3>
-        <p className="mt-1 text-[12px] leading-[1.4] text-[#7b746b]">
+        <h3 className="mt-1 text-[14px] font-medium text-foreground">{title}</h3>
+        <p className="mt-1 text-[12px] leading-[1.4] text-text-placeholder">
           {description}
         </p>
       </div>

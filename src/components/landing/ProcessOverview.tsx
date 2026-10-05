@@ -9,11 +9,11 @@ const ProcessOverview = () => {
           Verifiable Telemetry Pipeline
         </p>
 
-        <h1 className="mt-3 max-w-[48rem] font-serif text-[clamp(2.5rem,3.8vw,4rem)] leading-[1.05] tracking-[-0.05em] text-[#161512]">
+        <h1 className="mt-3 max-w-[48rem] font-serif text-[clamp(2.5rem,3.8vw,4rem)] leading-[1.05] tracking-[-0.05em] text-foreground">
           From market movement to meaningful insight.
         </h1>
 
-        <p className="mt-6 max-w-[48rem] text-[15px] leading-[1.55] text-[#6b665f]">
+        <p className="mt-6 max-w-[48rem] text-[15px] leading-[1.55] text-text-muted">
           How raw market signals transform into institutional clarity. Five
           deliberate stages, completely open to verification at every layer.
         </p>
@@ -23,14 +23,14 @@ const ProcessOverview = () => {
         {pipelineStages.map((stage) => (
           <div
             key={stage.number}
-            className="flex min-h-[244px] min-w-[220px] flex-1 flex-col rounded-[7px] border border-[#d8d1c6] bg-[#fffdf9] p-5 text-left shadow-[0_2px_5px_rgba(29,27,25,0.04)]"
+            className="flex min-h-[244px] min-w-[220px] flex-1 flex-col rounded-[7px] border border-border bg-surface-container-lowest p-5 text-left shadow-[0_2px_5px_var(--shadow-card)]"
           >
             <div className="flex items-center justify-between">
               <span
                 className={`flex h-7 w-7 items-center justify-center rounded-[4px] font-medium ${
                   stage.accent
                     ? "bg-primary text-white"
-                    : "bg-surface-container text-[#1d1b19]"
+                    : "bg-surface-container text-foreground"
                 }`}
               >
                 {stage.number}
@@ -44,22 +44,22 @@ const ProcessOverview = () => {
               />
             </div>
 
-            <h2 className="mt-5 text-[17px] font-medium tracking-[-0.02em] text-[#161512]">
+            <h2 className="mt-5 text-[17px] font-medium tracking-[-0.02em] text-foreground">
               {stage.title}
             </h2>
 
-            <p className="mt-2 text-[13px] leading-[1.5] text-[#6b665f]">
+            <p className="mt-2 text-[13px] leading-[1.5] text-text-muted">
               {stage.description}
             </p>
 
-            <div className="mt-auto border-t border-[#d8d1c6] pt-3 text-[12px] text-[#7b746b]">
+            <div className="mt-auto border-t border-border pt-3 text-[12px] text-text-placeholder">
               {stage.footer}
             </div>
           </div>
         ))}
       </div>
 
-      <div className="mt-10 flex w-full items-center justify-between gap-4 rounded-[7px] border border-[#d8d1c6] bg-[#fffdf9] px-5 py-4 text-[13px] text-[#4f4a45] shadow-[0_2px_5px_rgba(29,27,25,0.03)]">
+      <div className="mt-10 flex w-full items-center justify-between gap-4 rounded-[7px] border border-border bg-surface-container-lowest px-5 py-4 text-[13px] text-text-secondary shadow-[0_2px_5px_var(--shadow-soft)]">
         <div className="flex items-center gap-3">
           <Image
             src="/assets/data-lineage.svg"
