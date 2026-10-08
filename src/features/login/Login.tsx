@@ -16,16 +16,16 @@ const Login = () => {
   };
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-surface-container-lowest px-6 py-12 text-foreground">
+    <main className="login-page flex min-h-screen items-center justify-center bg-surface-container-lowest px-6 py-12 text-foreground">
       <motion.div
-        className="w-full max-w-110"
+        className="login-content w-full max-w-110"
         initial={shouldReduceMotion ? false : { opacity: 0, y: 24 }}
         animate={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
         <Link
           href="/"
-          className="group mb-8 inline-flex items-center gap-2 text-[14px] text-text-secondary"
+          className="login-back group mb-8 inline-flex gap-2 text-[14px] text-text-secondary"
         >
           <span className="text-[20px] leading-none text-primary transition-transform duration-200 group-hover:-translate-x-1">
             <span aria-hidden="true">←</span>
@@ -35,16 +35,19 @@ const Login = () => {
           </span>
         </Link>
 
-        <div className="mb-10">
-          <h1 className="font-serif text-[clamp(2.7rem,6vw,3.5rem)] leading-none tracking-[-0.06em]">
+        <div className="login-intro mb-10">
+          <h1 className="login-title font-serif text-[clamp(2.7rem,6vw,3.5rem)] leading-none tracking-[-0.06em]">
             Welcome back.
           </h1>
-          <p className="mt-5 max-w-88 text-[15px] leading-[1.55] text-text-secondary">
+          <p className="login-description mt-5 max-w-88 text-[15px] leading-[1.55] text-text-secondary">
             Sign in to continue to your financial intelligence workspace.
           </p>
         </div>
 
-        <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          className="login-form space-y-5"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div>
             <label
               htmlFor="email"
@@ -63,7 +66,7 @@ const Login = () => {
           </div>
 
           <div>
-            <div className="mb-2 flex items-center justify-between gap-4">
+            <div className="login-password-label mb-2 flex items-center justify-between gap-4">
               <label
                 htmlFor="password"
                 className="text-[14px] font-medium text-foreground"
@@ -115,7 +118,7 @@ const Login = () => {
 
         <div className="my-8 h-px bg-border" />
 
-        <p className="text-[15px] text-text-secondary">
+        <p className="login-signup text-[15px] text-text-secondary">
           Don&apos;t have an account?{" "}
           <Link
             href="/register"

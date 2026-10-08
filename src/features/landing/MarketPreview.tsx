@@ -2,7 +2,7 @@ import Button from "@/components/shared/Button";
 
 const MarketPreview = () => {
   return (
-    <section className="mx-auto min-w-[600px] flex min-h-[850px] w-full flex-col items-center justify-center gap-10 overflow-hidden py-24 lg:w-[70%] lg:flex-row lg:items-center lg:gap-[3.5vw] lg:px-0 lg:py-24">
+    <section className="mx-auto flex min-h-0 w-full min-w-0 flex-col items-center justify-center gap-10 overflow-hidden px-5 py-16 sm:px-8 lg:min-h-[850px] lg:w-[70%] lg:flex-row lg:items-center lg:gap-[3.5vw] lg:px-0 lg:py-24">
       <div className="flex min-w-0 flex-1 flex-col justify-center">
         {/* header */}
         <div className="mb-5 inline-flex w-fit items-center gap-2 rounded-md bg-surface-container px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.16em] text-text-secondary shadow-sm">
@@ -37,7 +37,7 @@ const MarketPreview = () => {
         </div>
 
         {/*  */}
-        <div className="mt-11 grid grid-cols-3 gap-4 border-t border-border pt-7 text-left">
+        <div className="mt-9 grid grid-cols-3 gap-3 border-t border-border pt-6 text-left sm:mt-11 sm:gap-4 sm:pt-7">
           <div>
             <div className="font-serif text-[18px] font-semibold text-foreground sm:text-[20px]">
               42,000+
@@ -70,19 +70,19 @@ const MarketPreview = () => {
       {/* macro conviction signal */}
       <div className="flex min-w-0 flex-1">
         <div className="w-full rounded-[8px] border border-border bg-surface-container-lowest p-[clamp(1.25rem,2vw,2rem)] shadow-[0_8px_18px_var(--shadow-card)]">
-          <div className="mb-4 flex items-center justify-between gap-3 border-b border-border pb-4">
-            <div className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.18em] text-text-secondary">
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
+            <div className="inline-flex min-w-0 items-center gap-2 text-[10px] font-medium uppercase tracking-[0.14em] text-text-secondary sm:text-[11px] sm:tracking-[0.18em]">
               <span className="h-2.5 w-2.5 rounded-full bg-primary" />
               MACRO CONVICTION SIGNAL
             </div>
-            <div className="text-[11px] uppercase tracking-[0.18em] text-text-placeholder">
+            <div className="text-[9px] uppercase tracking-[0.12em] text-text-placeholder sm:text-[11px] sm:tracking-[0.18em]">
               LIVE // 14:32:08 UTC
             </div>
           </div>
 
-          <div className="mb-5 flex items-start justify-between gap-3">
-            <div>
-              <div className="flex flex-wrap items-center gap-2 font-medium text-[18px] text-foreground">
+          <div className="mb-5 flex items-start justify-between gap-4">
+            <div className="min-w-0">
+              <div className="flex flex-wrap items-center gap-2 font-medium text-[16px] text-foreground sm:text-[18px]">
                 Global Liquidity Dynamics
                 <span className="rounded-[3px] bg-primary-subtle px-2 py-1 text-[10px] font-medium text-primary-token">
                   Overweight
@@ -94,8 +94,8 @@ const MarketPreview = () => {
               </div>
             </div>
 
-            <div className="pt-1 text-right">
-              <div className="font-serif text-[26px] leading-none text-foreground">
+            <div className="shrink-0 pt-1 text-right">
+              <div className="font-serif text-[22px] leading-none text-foreground sm:text-[26px]">
                 142.84
               </div>
               <div className="mt-1 text-[12px] font-medium text-success">
@@ -105,7 +105,7 @@ const MarketPreview = () => {
           </div>
 
           <div className="rounded-[7px] border border-border bg-surface-container p-2.5 pb-1">
-            <div className="mb-2 flex items-center justify-between text-[11px] text-text-muted">
+            <div className="mb-2 flex flex-wrap items-center justify-between gap-1 text-[10px] text-text-muted sm:text-[11px]">
               <span>Sovereign Net Absorption</span>
               <span>120-Day Range</span>
             </div>
@@ -176,9 +176,9 @@ const MarketPreview = () => {
             </svg>
           </div>
 
-          <div className="mt-5 grid grid-cols-2 gap-2.5 border-t border-border pt-4">
+          <div className="mt-5 grid grid-cols-1 gap-2.5 border-t border-border pt-4 sm:grid-cols-2">
             <div className="rounded-[6px] border border-border bg-surface-container p-3 text-foreground">
-              <div className="mb-2 flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-text-secondary">
+              <div className="mb-2 flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.12em] text-text-secondary sm:text-[11px] sm:tracking-[0.16em]">
                 <span className="inline-flex h-4 w-4 items-center justify-center rounded-sm bg-primary-subtle text-[10px] text-primary">
                   🏛
                 </span>
@@ -193,7 +193,7 @@ const MarketPreview = () => {
             </div>
 
             <div className="rounded-[6px] border border-border bg-surface-container p-3 text-foreground">
-              <div className="mb-2 flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-text-secondary">
+              <div className="mb-2 flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.12em] text-text-secondary sm:text-[11px] sm:tracking-[0.16em]">
                 <span className="inline-flex h-4 w-4 items-center justify-center rounded-sm bg-primary-subtle text-[10px] text-primary">
                   ⤴
                 </span>

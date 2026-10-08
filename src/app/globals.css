@@ -82,3 +82,85 @@
   background-color: var(--surface-container);
   color: var(--foreground);
 }
+
+@media (max-width: 640px) {
+  .login-page {
+    min-height: 100dvh;
+    align-items: flex-start;
+    padding: 2.25rem 1.25rem 2.5rem;
+  }
+
+  .login-content {
+    max-width: 100%;
+  }
+
+  .login-back {
+    margin-bottom: 3rem;
+  }
+
+  .login-intro {
+    margin-bottom: 2.25rem;
+  }
+
+  .login-title {
+    font-size: clamp(2.35rem, 12vw, 3rem);
+    letter-spacing: -0.055em;
+  }
+
+  .login-description {
+    max-width: 19rem;
+    margin-top: 1rem;
+    font-size: 0.9375rem;
+  }
+
+  .login-form {
+    gap: 1.25rem;
+  }
+
+  .login-password-label {
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .login-password-label > label:last-child {
+    flex-shrink: 0;
+    font-size: 0.6875rem;
+  }
+
+  .login-form input[type="email"],
+  .login-form input[type="password"],
+  .login-form input[type="text"] {
+    height: 3.375rem;
+    padding-inline: 0.875rem;
+    font-size: 0.9375rem;
+  }
+
+  .login-form > button[type="submit"] {
+    height: 3.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .login-signup {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 360px) {
+  .login-page {
+    padding-inline: 1rem;
+  }
+
+  .login-back {
+    margin-bottom: 2.5rem;
+  }
+
+  .login-password-label {
+    align-items: flex-start;
+  }
+
+  .login-password-label > label:last-child {
+    max-width: 8.5rem;
+    text-align: right;
+  }
+}
