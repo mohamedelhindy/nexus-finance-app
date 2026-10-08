@@ -70,8 +70,8 @@ const Navbar = () => {
 
           {/* sign in */}
           <Link
-            href="#sign-in"
-            className="hidden text-[14px] text-text-secondary transition-colors duration-200 hover:text-foreground sm:block"
+            href="/login"
+            className="text-[14px] text-text-secondary transition-colors duration-200 hover:text-foreground"
           >
             Sign In
           </Link>
