@@ -19,7 +19,7 @@ export default function LandingMotion({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{
         once: true,
-        amount: 0.35,
+        amount: 0.1,
       }}
       transition={{
         duration: 0.3,
