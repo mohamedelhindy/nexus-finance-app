@@ -23,7 +23,7 @@ const Login = () => {
 
   return (
     <main className="flex min-h-[calc(100vh-65px)] flex-col rounded-b-lg bg-surface">
-      <div className="mx-auto w-full max-w-[820px] flex-1 pt-14 max-sm:px-5 max-sm:pt-10">
+      <div className="mx-auto w-full max-w-[880px] flex-1 pt-14 max-sm:px-5 max-sm:pt-10">
         <div className="mb-8">
           <h1 className="font-serif text-[52px] font-normal leading-none tracking-[-0.055em] text-foreground max-sm:text-[42px]">
             Welcome back.
@@ -108,7 +108,7 @@ const Login = () => {
                   </p>
                 )}
                 <Link
-                  className="mt-2 block text-right text-xs font-semibold text-primary hover:text-primary-hover"
+                  className="mt-4 block text-right text-xs font-semibold text-primary hover:text-primary-hover"
                   href="/forgot-password"
                 >
                   Forgot password?
@@ -119,7 +119,7 @@ const Login = () => {
         </form>
       </div>
 
-      <div className="flex min-h-[80px] items-center justify-between gap-6 border-t border-border px-[max(1.5rem,calc((100vw-820px)/2))] py-4 max-sm:flex-col max-sm:items-stretch max-sm:gap-4 max-sm:px-5">
+      <div className="flex min-h-[80px] items-center justify-between gap-6 border-t border-border px-[max(1.5rem,calc((100vw-880px)/2))] py-4 max-sm:flex-col max-sm:items-stretch max-sm:gap-4 max-sm:px-5">
         <p className="m-0 text-[13px] text-text-secondary">
           Don&apos;t have an account?{" "}
           <Link
