@@ -1,10 +1,10 @@
-import ClosingCta from "@/features/landing/ClosingCta";
-import CoreIntelligence from "@/features/landing/CoreIntelligence";
-import Explainability from "@/features/landing/Explainability";
-import MarketPreview from "@/features/landing/MarketPreview";
-import MarketSynthesis from "@/features/landing/MarketSynthesis";
-import ProcessOverview from "@/features/landing/ProcessOverview";
-import SiteFooter from "@/features/landing/SiteFooter";
+import ClosingCta from "@/components/landing/ClosingCta";
+import CoreIntelligence from "@/components/landing/CoreIntelligence";
+import Explainability from "@/components/landing/Explainability";
+import MarketPreview from "@/components/landing/MarketPreview";
+import MarketSynthesis from "@/components/landing/MarketSynthesis";
+import ProcessOverview from "@/components/landing/ProcessOverview";
+import SiteFooter from "@/components/landing/SiteFooter";
 import Navbar from "@/components/shared/Navbar";
 import LandingMotion from "@/components/shared/LandingMotion";
 
