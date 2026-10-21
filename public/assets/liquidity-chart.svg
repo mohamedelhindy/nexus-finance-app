@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 170" fill="none">
+  <defs>
+    <linearGradient id="liquidityFill" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0D7775" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#0D7775" stop-opacity=".02"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#DCD5CB" stroke-opacity=".3" stroke-dasharray="2 8">
+    <path d="M0 26h520"/>
+    <path d="M0 56h520"/>
+    <path d="M0 86h520"/>
+    <path d="M0 116h520"/>
+    <path d="M0 146h520"/>
+  </g>
+  <path d="M0 120C35 105 60 90 100 96s60 24 100-14 70-22 110-4 70-8 110-36 50 2 100-6v134H0z" fill="url(#liquidityFill)"/>
+  <path d="M0 120C35 105 60 90 100 96s60 24 100-14 70-22 110-4 70-8 110-36 50 2 100-6" stroke="#0D7775" stroke-width="2.5" stroke-linecap="round"/>
+  <g stroke="#DCD5CB" stroke-opacity=".4" stroke-dasharray="1 8">
+    <path d="M10 144v26"/>
+    <path d="M150 144v26"/>
+    <path d="M290 144v26"/>
+    <path d="M430 144v26"/>
+  </g>
+  <g fill="#999388" font-family="sans-serif" font-size="10">
+    <text x="35" y="164">OCT 2024</text>
+    <text x="170" y="164">DEC 2024</text>
+    <text x="305" y="164">FEB 2025</text>
+    <text x="430" y="164">APR 2025</text>
+  </g>
+</svg>

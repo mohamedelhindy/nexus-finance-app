@@ -16,20 +16,11 @@ export const signupSchema = z
       .min(1, "Last name is required")
       .max(50, "Last name is too long"),
 
-    dateOfBirth: z
-      .string()
-      .min(1, "Date of birth is required")
-      .refine((value) => {
-        const date = new Date(`${value}T00:00:00`);
-        const today = new Date();
-
-        return (
-          /^\d{4}-\d{2}-\d{2}$/.test(value) &&
-          !Number.isNaN(date.getTime()) &&
-          date.toISOString().slice(0, 10) === value &&
-          date < today
-        );
-      }, "Enter a valid date of birth"),
+    dateOfBirth: z.object({
+      day: z.string().min(1, "Select a day"),
+      month: z.string().min(1, "Select a month"),
+      year: z.string().min(1, "Select a year"),
+    }),
 
     // Account security
     email: z
