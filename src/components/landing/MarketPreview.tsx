@@ -1,4 +1,5 @@
 import Button from "@/components/shared/Button";
+import Image from "next/image";
 
 const MarketPreview = () => {
   return (
@@ -110,70 +111,13 @@ const MarketPreview = () => {
               <span>120-Day Range</span>
             </div>
 
-            <svg
-              viewBox="0 0 520 170"
+            <Image
+              src="/assets/liquidity-chart.svg"
+              alt="Macroeconomic trend chart"
               className="h-[138px] w-full"
-              aria-label="Macroeconomic trend chart"
-              role="img"
-            >
-              <defs>
-                <linearGradient id="liquidityFill" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="0%" stopColor="var(--primary)" stopOpacity="0.22" />
-                  <stop offset="100%" stopColor="var(--primary)" stopOpacity="0.02" />
-                </linearGradient>
-              </defs>
-
-              {[0, 1, 2, 3, 4].map((row) => (
-                <line
-                  key={row}
-                  x1="0"
-                  x2="520"
-                  y1={26 + row * 30}
-                  y2={26 + row * 30}
-                  stroke="var(--input-border)"
-                  strokeOpacity="0.3"
-                  strokeDasharray="2 8"
-                />
-              ))}
-
-              <path
-                d="M0 120 C 35 105, 60 90, 100 96 S 160 120, 200 82 S 270 60, 310 78 S 380 70, 420 42 S 470 44, 520 36 L520 170 L0 170 Z"
-                fill="url(#liquidityFill)"
-              />
-
-              <path
-                d="M0 120 C 35 105, 60 90, 100 96 S 160 120, 200 82 S 270 60, 310 78 S 380 70, 420 42 S 470 44, 520 36"
-                fill="none"
-                stroke="var(--primary)"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-              />
-
-              {[0, 1, 2, 3].map((point) => (
-                <path
-                  key={point}
-                  d={`M${point * 140 + 10} 144 L${point * 140 + 10} 170`}
-                  stroke="var(--input-border)"
-                  strokeOpacity="0.4"
-                  strokeDasharray="1 8"
-                />
-              ))}
-
-              <g fontSize="10" fill="var(--text-placeholder)" fontFamily="sans-serif">
-                <text x="35" y="164">
-                  OCT 2024
-                </text>
-                <text x="170" y="164">
-                  DEC 2024
-                </text>
-                <text x="305" y="164">
-                  FEB 2025
-                </text>
-                <text x="430" y="164">
-                  APR 2025
-                </text>
-              </g>
-            </svg>
+              height={170}
+              width={520}
+            />
           </div>
 
           <div className="mt-5 grid grid-cols-1 gap-2.5 border-t border-border pt-4 sm:grid-cols-2">

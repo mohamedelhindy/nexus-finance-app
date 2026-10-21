@@ -1,11 +1,12 @@
 import { z } from "zod";
 
 export const otpSchema = z.object({
-  otp: z
-    .string()
-    .trim()
-    .min(1, "Verification code is required")
-    .regex(/^\d{6}$/, "Verification code must be exactly 6 digits"),
+  digit1: z.string().regex(/^\d$/, "Enter all 6 digits"),
+  digit2: z.string().regex(/^\d$/, "Enter all 6 digits"),
+  digit3: z.string().regex(/^\d$/, "Enter all 6 digits"),
+  digit4: z.string().regex(/^\d$/, "Enter all 6 digits"),
+  digit5: z.string().regex(/^\d$/, "Enter all 6 digits"),
+  digit6: z.string().regex(/^\d$/, "Enter all 6 digits"),
 });
 
 export type OtpFormData = z.infer<typeof otpSchema>;
