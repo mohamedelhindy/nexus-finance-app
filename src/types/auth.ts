@@ -44,43 +44,43 @@ export interface RegisterResponse {
 }
 
 // OTP Generation Request & Response Typing
-export interface otpGenerateRequest {
+export interface OtpGenerateRequest {
   email: string;
   purpose: "EMAIL_VERIFICATION";
 }
 
-export interface otpGenerateResponse {
+export interface OtpGenerateResponse {
   message: string;
 }
 
 // OTP Checking Request & Response Typing
-export interface otpCheckRequest {
+export interface OtpCheckRequest {
   email: string;
   purpose: "EMAIL_VERIFICATION";
-  otp: number;
+  otp: string;
 }
 
-export interface otpCheckResponse {
+export interface OtpCheckResponse {
   message: string;
   verified: boolean;
 }
 
 // Forgot Password Request & Response Typing
-export interface forgotPassRequest {
+export interface ForgotPassRequest {
   email: string;
 }
 
-export interface forgotPassResponse {
+export interface ForgotPassResponse {
   message: string;
 }
 
 // Reset Password Request & Response Typing
-export interface resetPassRequest {
+export interface ResetPassRequest {
   email: string;
-  otp: number;
+  otp: string;
   newPassword: string;
 }
 
-export interface resetPassResponse {
+export interface ResetPassResponse {
   message: string;
 }
