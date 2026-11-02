@@ -13,17 +13,18 @@ import type {
   ForgotPassResponse,
   ResetPassRequest,
   ResetPassResponse,
+  User,
 } from "@/types/auth";
 
 // Login
-export const login = async (data: LoginRequest): Promise<LoginResponse> => {
+export const getLogin = async (data: LoginRequest): Promise<LoginResponse> => {
   const response = await api.post<LoginResponse>("/api/auth/login", data);
 
   return response.data;
 };
 
 // Register
-export const register = async (
+export const getRegister = async (
   data: RegisterRequest,
 ): Promise<RegisterResponse> => {
   const response = await api.post<RegisterResponse>("/api/auth/register", data);
@@ -32,7 +33,7 @@ export const register = async (
 };
 
 // Generate OTP
-export const generateOtp = async (
+export const getGenerateOtp = async (
   data: OtpGenerateRequest,
 ): Promise<OtpGenerateResponse> => {
   const response = await api.post<OtpGenerateResponse>(
@@ -44,7 +45,7 @@ export const generateOtp = async (
 };
 
 // Verify OTP
-export const verifyOtp = async (
+export const getVerifyOtp = async (
   data: OtpCheckRequest,
 ): Promise<OtpCheckResponse> => {
   const response = await api.post<OtpCheckResponse>(
@@ -56,7 +57,7 @@ export const verifyOtp = async (
 };
 
 // Forgot Password
-export const forgotPassword = async (
+export const getForgotPassword = async (
   data: ForgotPassRequest,
 ): Promise<ForgotPassResponse> => {
   const response = await api.post<ForgotPassResponse>(
@@ -68,7 +69,7 @@ export const forgotPassword = async (
 };
 
 // Reset Password
-export const resetPassword = async (
+export const getResetPassword = async (
   data: ResetPassRequest,
 ): Promise<ResetPassResponse> => {
   const response = await api.post<ResetPassResponse>(
@@ -77,4 +78,16 @@ export const resetPassword = async (
   );
 
   return response.data;
+};
+
+// Current User
+export const getCurrentUser = async (): Promise<User> => {
+  const response = await api.get<User>("/api/auth/me");
+
+  return response.data;
+};
+
+// Authentication Keys
+export const authKeys = {
+  me: ["auth", "me"] as const,
 };
