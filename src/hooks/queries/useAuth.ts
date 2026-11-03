@@ -11,6 +11,7 @@ import {
   getResetPassword,
   getCurrentUser,
   authKeys,
+  getLogout,
 } from "@/lib/api/auth/services/auth";
 
 export const useCurrentUser = () =>
@@ -23,6 +24,11 @@ export const useCurrentUser = () =>
 export const useLogin = () =>
   useMutation({
     mutationFn: getLogin,
+  });
+
+export const useLogout = () =>
+  useMutation({
+    mutationFn: getLogout,
   });
 
 export const useRegister = () =>
