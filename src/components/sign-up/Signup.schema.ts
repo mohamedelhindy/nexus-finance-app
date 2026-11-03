@@ -16,11 +16,7 @@ export const signupSchema = z
       .min(1, "Last name is required")
       .max(50, "Last name is too long"),
 
-    dateOfBirth: z.object({
-      day: z.string().min(1, "Select a day"),
-      month: z.string().min(1, "Select a month"),
-      year: z.string().min(1, "Select a year"),
-    }),
+    dateOfBirth: z.string().min(1, "Date of birth is required"),
 
     // Account security
     email: z
