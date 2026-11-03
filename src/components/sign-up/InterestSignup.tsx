@@ -1,5 +1,3 @@
-import AuthNavbar from "@/components/auth/AuthNavbar";
-
 const interests = [
   { label: "Technology", selected: true },
   { label: "Financial Services", selected: true },
@@ -14,39 +12,8 @@ const interests = [
 export const InterestSignup = () => {
   return (
     <>
-      <AuthNavbar variant="signin" />
       <main className="flex min-h-[calc(100vh-65px)] flex-col rounded-b-lg border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-[830px] flex-1 px-0 pb-10 pt-7 max-sm:px-5 max-sm:pt-8">
-          <div className="mb-12 grid grid-cols-4 gap-2.5 max-sm:mb-9">
-            <div>
-              <div className="h-0.5 bg-primary" />
-              <p className="mt-2 text-[13px] text-primary">
-                <span className="mr-2 font-serif italic">01</span>✓{" "}
-                <span className="ml-1">Personal</span>
-              </p>
-            </div>
-            <div>
-              <div className="h-0.5 bg-primary" />
-              <p className="mt-2 text-[13px] text-primary">
-                <span className="mr-2 font-serif italic">02</span>✓{" "}
-                <span className="ml-1">Security</span>
-              </p>
-            </div>
-            <div>
-              <div className="h-0.5 bg-primary" />
-              <p className="mt-2 text-[13px] font-semibold text-foreground">
-                <span className="mr-2 font-serif italic font-normal">03</span>
-                Interests &amp; region
-              </p>
-            </div>
-            <div>
-              <div className="h-0.5 bg-border" />
-              <p className="mt-2 text-[13px] text-text-muted">
-                <span className="mr-2 font-serif italic">04</span>Review
-              </p>
-            </div>
-          </div>
-
           <div className="mb-10">
             <h1 className="font-serif text-[56px] font-normal leading-none tracking-[-0.055em] text-foreground max-sm:text-[46px]">
               Make NEXUS yours.

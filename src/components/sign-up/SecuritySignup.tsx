@@ -1,11 +1,8 @@
 import Image from "next/image";
 
-import AuthNavbar from "@/components/auth/AuthNavbar";
-
 export const SecuritySignup = () => {
   return (
     <>
-      <AuthNavbar variant="signin" />
       <main className="flex min-h-[calc(100vh-65px)] flex-col rounded-b-lg border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-[830px] flex-1 px-0 pb-10 pt-7 max-sm:px-5 max-sm:pt-8">
           <div className="mb-12 grid grid-cols-4 gap-2.5 max-sm:mb-9">
@@ -102,7 +99,9 @@ export const SecuritySignup = () => {
                   </div>
                   <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[12px] text-text-secondary">
                     <span className="text-primary">● 12+ characters</span>
-                    <span className="text-primary">● Upper &amp; lower case</span>
+                    <span className="text-primary">
+                      ● Upper &amp; lower case
+                    </span>
                     <span className="text-primary">● One digit</span>
                     <span className="text-text-muted">○ One symbol</span>
                   </div>
