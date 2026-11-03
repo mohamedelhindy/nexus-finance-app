@@ -23,6 +23,11 @@ export const getLogin = async (data: LoginRequest): Promise<LoginResponse> => {
   return response.data;
 };
 
+// Logout
+export const getLogout = async (): Promise<void> => {
+  const response = await api.post<void>("api/auth/logout");
+};
+
 // Register
 export const getRegister = async (
   data: RegisterRequest,
